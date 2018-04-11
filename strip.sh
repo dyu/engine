@@ -3,6 +3,9 @@
 TARGET=host_release
 [ "$1" != "" ] && TARGET=$1
 
+# default target is built in src/ dir via:
+# ./flutter/tools/gn --runtime-mode=release
+
 [ -e src/out/$TARGET/libflutter_engine.so ] || { echo "src/out/$TARGET/libflutter_engine.so does not exist."; exit 1; }
 
 SUFFIX=_strip
