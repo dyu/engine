@@ -1,3 +1,7 @@
+/.gclient
+/.gclient_entries
+/src
+
 # commonly generated files
 *.pyc
 *~
